@@ -299,6 +299,8 @@ export class DatabaseAdapter {
 
       return true;
     } catch (e) {
+      console.log('err', e);
+      console.log('string', e.toString());
       return false;
     }
   }
